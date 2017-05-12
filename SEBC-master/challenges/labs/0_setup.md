@@ -11,12 +11,13 @@ CASALS_5 54.76.154.127	(172.31.34.131)		i-0d9216306788dad67: ec2-54-76-154-127.e
 cat /etc/redhat-release
 Red Hat Enterprise Linux Server release 7.0 (Maipo)
 
-uname -a
-Linux ip-172-31-47-175.eu-west-1.compute.internal 3.10.0-123.8.1.el7.x86_64 #1 SMP Mon Aug 11 13:37:49 EDT 2014 x86_64 x86_64 x86_64 GNU/Linux
+ uname -a
+Linux ip-172-31-0-155.eu-west-1.compute.internal 3.10.0-229.el7.x86_64 #1 SMP Thu Jan 29 18:37:38 EST 2015 x86_64 x86_64 x86_64 GNU/Linux
+
 
 df -h
 Filesystem      Size  Used Avail Use% Mounted on
-/dev/xvda2      6.0G  1.6G  4.4G  27% /
+/dev/xvda2     1000G  887M 1000G   1% /
 devtmpfs         32G     0   32G   0% /dev
 tmpfs            32G     0   32G   0% /dev/shm
 tmpfs            32G   17M   32G   1% /run
@@ -24,17 +25,11 @@ tmpfs            32G     0   32G   0% /sys/fs/cgroup
 
 yum repolist enabled
 Loaded plugins: amazon-id, rhui-lb
-cloudera-manager                                                                                                                                  |  951 B  00:00:00
-rhui-REGION-client-config-server-7                                                                                                                | 2.9 kB  00:00:00
-rhui-REGION-rhel-server-releases                                                                                                                  | 3.5 kB  00:00:00
-rhui-REGION-rhel-server-rh-common                                                                                                                 | 3.8 kB  00:00:00
-cloudera-manager/primary                                                                                                                          | 4.3 kB  00:00:00
-cloudera-manager                                                                                                                                                     7/7
 repo id                                                                   repo name                                                                                status
-cloudera-manager                                                          Cloudera Manager                                                                              7
 rhui-REGION-client-config-server-7/x86_64                                 Red Hat Update Infrastructure 2.0 Client Configuration Server 7                               6
 rhui-REGION-rhel-server-releases/7Server/x86_64                           Red Hat Enterprise Linux Server 7 (RPMs)                                                 14,282
 rhui-REGION-rhel-server-rh-common/7Server/x86_64                          Red Hat Enterprise Linux Server 7 RH Common (RPMs)                                          228
+repolist: 14,516
 
 
 adduser zhou;adduser chen
