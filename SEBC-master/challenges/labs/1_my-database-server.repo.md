@@ -56,10 +56,4 @@ MariaDB [(none)]> SHOW DATABASES;
 +--------------------+
 9 rows in set (0.00 sec)
 
-------------------------------------------------------------------
 
-yum install mariadb-server
-wget http://dev.mysql.com/get/Downloads/Connector-J/mysql-connector-java-5.1.30.tar.gz;tar -xzvf mysql-connector-java-5.1.30.tar.gz
-mkdir /usr/share/java
-cp mysql-connector-java-5.1.30/mysql-connector-java-5.1.30-bin.jar /usr/share/java/mysql-connector-java.jar
-sudo service mariadb start
