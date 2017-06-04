@@ -1,4 +1,4 @@
-
+```
 MariaDB [(none)]> SELECT @@hostname hostname;
 +---------------------------------------------+
 | hostname                                    |
@@ -6,7 +6,8 @@ MariaDB [(none)]> SELECT @@hostname hostname;
 | ip-172-31-47-175.eu-west-1.compute.internal |
 +---------------------------------------------+
 1 row in set (0.00 sec)
-
+```
+```
  SHOW VARIABLES LIKE "%version%";
 +-------------------------+---------------------+
 | Variable_name           | Value               |
@@ -20,8 +21,8 @@ MariaDB [(none)]> SELECT @@hostname hostname;
 | version_compile_os      | Linux               |
 +-------------------------+---------------------+
 7 rows in set (0.00 sec)
-
-
+```
+```
 ariaDB [(none)]> CREATE DATABASE scm;
 Query OK, 1 row affected (0.00 sec)
 
@@ -39,7 +40,8 @@ Query OK, 1 row affected (0.00 sec)
 
 MariaDB [(none)]> CREATE DATABASE sentry;
 Query OK, 1 row affected (0.00 sec)
-
+```
+```
 MariaDB [(none)]> SHOW DATABASES;
 +--------------------+
 | Database           |
@@ -55,11 +57,12 @@ MariaDB [(none)]> SHOW DATABASES;
 | sentry             |
 +--------------------+
 9 rows in set (0.00 sec)
-
+```
 ------------------------------------------------------------------
-
+```
 yum install mariadb-server
 wget http://dev.mysql.com/get/Downloads/Connector-J/mysql-connector-java-5.1.30.tar.gz;tar -xzvf mysql-connector-java-5.1.30.tar.gz
 mkdir /usr/share/java
 cp mysql-connector-java-5.1.30/mysql-connector-java-5.1.30-bin.jar /usr/share/java/mysql-connector-java.jar
 sudo service mariadb start
+```
