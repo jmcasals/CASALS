@@ -1,3 +1,4 @@
+```
 hdfs dfs -ls /user
 Found 5 items
 drwxrwxrwx   - mapred hadoop          0 2017-05-12 05:35 /user/history
@@ -5,10 +6,12 @@ drwxrwxr-t   - hive   hive            0 2017-05-12 05:36 /user/hive
 drwxrwxr-x   - hue    hue             0 2017-05-12 05:36 /user/hue
 drwxrwxr-x   - impala impala          0 2017-05-12 05:36 /user/impala
 drwxrwxr-x   - oozie  oozie           0 2017-05-12 05:36 /user/oozie
-
+```
+```
 curl -X GET -u admin:admin http://localhost:7180/api/version
 v16
-
+```
+```
 curl -X GET -u admin:admin http://localhost:7180/api/v6/clusters/jmcasals/services
 {
   "items" : [ {
@@ -180,3 +183,4 @@ curl -X GET -u admin:admin http://localhost:7180/api/v6/clusters/jmcasals/servic
     "maintenanceOwners" : [ ],
     "displayName" : "HDFS"
   } ]
+```
